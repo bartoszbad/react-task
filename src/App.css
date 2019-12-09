@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+}
+
+.reportHeader {
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: left;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+}
+
+.form-row {
+    display: flex;
+    width: 100%;
+    padding: 15px 10px;
+}
+
+.weekly {
+    display: flex;
+    width: 100%;
+    padding: 15px 10px;
+}
+
+.form-row-col1 {
+    width: 25%;
+    display: flex;
+}
+
+.form-row-col1-weekly {
+    width: 164px;
+    display: inline-flex;
+}
+
+.form-row-col2 {
+    width: 75%;
+    display: flex;
+}
+
+.form-row-col2-weekly {
+    width: 493px;
+    display: inline-flex;
+}
+
+.form-select {
+    width: 150px;
+    margin-right: 10px;
+}
+
+.radio-container {
+    display: flex;
+    align-content: flex-start;
+}
+
+.radio-container-2 {
+    display: flex;
+    /*width: 75%;*/
+}
+
+.buttons-wrapper {
+    justify-content: flex-end;
+    border-top: 1px solid #A6A3A4;
+}
+
+.box {
+    border-radius: 0px;
+    width: 100%;
+    border-width: 1px;
+    padding: 10px;
+}
+
+.box-2 {
+    border-radius: 0px;
+    width: 150px;
+    border-width: 1px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.box-3 {
+    border-radius: 0px;
+    width: 150px;
+    border-width: 1px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.text {
+    margin-top: 7px;
+}
+
+.spacing-first {
+    margin-right: 5px;
+    display: flex;
+}
+
+.spacing-next {
+    margin-left: 10px;
+    margin-right: 5px;
+    display: flex;
+}
+
+.btnWithe {
+    background-color: #ffffff;
+    border: 1px solid #A6A3A4;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 0px;
+}
+
+.btnBlack {
+    background-color: #222222;
+    border: none;
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+}
+
