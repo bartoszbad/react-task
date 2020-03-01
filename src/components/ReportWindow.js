@@ -4,6 +4,9 @@ import Daily from "./Daily";
 import Weekly from "./Weekly";
 import SpecificDate from "./SpecificDate";
 import NoRepeat from "./NoRepeat";
+import {API_URL} from "../constants";
+
+import axios from "axios";
 
 class ReportWindow extends Component {
     constructor(props) {
@@ -45,19 +48,30 @@ class ReportWindow extends Component {
 
     handleFormSubmit = formSubmitEvent => {
         formSubmitEvent.preventDefault();
-        this.props.hideReportWindow();
+        console.log(this.state);
 
 
-        fetch('https://postman-echo.com/post', {
-            method: 'post',
-            mode: 'no-cors',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(this.state)
-        })
-            .then(res => {
+        // fetch(API_URL, {
+        //     method: 'post',
+        //     mode: 'no-cors',
+        //     headers: {
+        //         'Accept': 'application/json, text/plain',
+        //         'Content-Type': 'application/json'
+        //     },
+        //     body: JSON.stringify(this.state)
+        // })
+        //     .then(res => {
+        //         console.log(res);
+        //         this.props.hideReportWindow();
+        //         this.props.showResponseWindowOk();
+        //     })
+        //     .catch(err => {
+        //         console.log(err);
+        //         this.props.showResponseWindowFalse();
+        //     })
+        axios.post(API_URL, this.state).then(res => {
                 console.log(res);
+                this.props.hideReportWindow();
                 this.props.showResponseWindowOk();
             })
             .catch(err => {
@@ -82,7 +96,7 @@ class ReportWindow extends Component {
                             <input
                                 type='text'
                                 className="box"
-                                placeholder={"Shareable Report"}
+                                placeholder={"Your Report"}
                                 name="fileName"
                                 value={fileName}
                                 onChange={this.handleChange}

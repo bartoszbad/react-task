@@ -69,9 +69,6 @@ class Generate extends Component {
 
         return (
             <div className="App">
-                <h1>
-                    Generate report
-                </h1>
                 <Modal
                     style={modalStyle}
                     isOpen={this.state.show}
@@ -84,10 +81,11 @@ class Generate extends Component {
                     />
                 </Modal>
                 <button
+                    className="btnGenerate"
                     type="button"
                     onClick={this.showReportWindow}
                 >
-                    Generate
+                    Generate report for your company!
                 </button>
                 <Modal
                     style={modalStyle}

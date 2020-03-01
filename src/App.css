@@ -135,3 +135,19 @@ body {
     margin: 10px;
 }
 
+
+.btnGenerate {
+    background-color: #007f00;
+    border: 5px white;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    width: 400px;
+    height: 50px;
+    margin: 10px;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+}
+
